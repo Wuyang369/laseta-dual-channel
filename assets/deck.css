@@ -263,22 +263,24 @@ html:not(.scroll-mode) body{overflow:hidden;background:#14110F}
 .closing .quote-big{font-size:52px;line-height:1.42;max-width:36ch}
 
 /* ============ 章节结论页 ============ */
-.recap{justify-content:center;color:#fff;
+.recap{justify-content:center;color:var(--text-1);
   background:
-    radial-gradient(1100px 760px at 6% -6%,rgba(168,69,47,.32),transparent 60%),
-    radial-gradient(900px 680px at 98% 104%,rgba(44,74,90,.55),transparent 64%),
-    #1A2228}
-.recap .kicker{color:#E5A08C}
-.recap .h2{color:#fff;font-size:64px;line-height:1.14;max-width:30ch;margin:8px 0 60px}
-.recap .h2 em{font-style:normal;color:#E5A08C}
+    radial-gradient(1000px 700px at 4% -8%,rgba(168,69,47,.13),transparent 62%),
+    radial-gradient(900px 640px at 98% 104%,rgba(44,74,90,.10),transparent 66%),
+    linear-gradient(180deg,#FBF4EE,#F4EDE6)}
+.recap .kicker{color:var(--accent)}
+.recap::before{content:"";position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,var(--accent),rgba(168,69,47,.30))}
+.recap .h2{color:var(--text-1);font-size:64px;line-height:1.14;max-width:30ch;margin:8px 0 60px}
+.recap .h2 em{font-style:normal;color:var(--accent)}
 .recap-points{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
-.recap-points .rp{border-top:1px solid rgba(255,255,255,.22);padding-top:24px}
-.recap-points .n{font-family:var(--font-mono);font-size:14px;letter-spacing:.14em;color:#E5A08C;font-weight:700}
-.recap-points h4{font-size:27px;color:#fff;margin:12px 0 12px;line-height:1.35}
-.recap-points p{font-size:18px;line-height:1.72;color:rgba(255,255,255,.76);margin:0}
-.recap-points p b{color:#fff;background:linear-gradient(180deg,transparent 58%,rgba(229,160,140,.30) 58%);padding:0 2px;border-radius:2px}
-.recap-take{margin-top:72px;padding:26px 32px;background:rgba(255,255,255,.07);border-left:4px solid #E5A08C;border-radius:0 10px 10px 0}
-.recap-take span{display:block;font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;color:#E5A08C;margin-bottom:10px}
-.recap-take b{font-size:24px;line-height:1.6;color:#fff;font-weight:600}
-.recap .s-footer{color:rgba(255,255,255,.42);border-top-color:rgba(255,255,255,.16)}
-.recap .s-footer .slide-number{color:#E5A08C}
+.recap-points .rp{border-top:1px solid rgba(168,69,47,.30);padding-top:24px}
+.recap-points .n{font-family:var(--font-mono);font-size:14px;letter-spacing:.14em;color:var(--accent);font-weight:700}
+.recap-points h4{font-size:27px;color:var(--text-1);margin:12px 0 12px;line-height:1.35}
+.recap-points p{font-size:18px;line-height:1.72;color:var(--text-2);margin:0}
+.recap-points p b{color:var(--accent);background:linear-gradient(180deg,transparent 58%,rgba(168,69,47,.16) 58%);padding:0 2px;border-radius:2px}
+.recap-take{margin-top:72px;padding:26px 32px;background:linear-gradient(180deg,#FDF2ED,#FAE8E1);
+  border-left:4px solid var(--accent);border-radius:0 10px 10px 0;box-shadow:0 14px 34px rgba(168,69,47,.10)}
+.recap-take span{display:block;font-family:var(--font-mono);font-size:13px;letter-spacing:.16em;color:var(--accent);margin-bottom:10px}
+.recap-take b{font-size:24px;line-height:1.6;color:var(--text-1);font-weight:600}
+.recap .s-footer{color:var(--text-3);border-top-color:var(--border)}
+.recap .s-footer .slide-number{color:var(--accent)}
