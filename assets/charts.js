@@ -381,6 +381,7 @@
   /* ---------- 服务费试算器 ---------- */
   (function () {
     var tier = 0.3;
+    var promoRatio = { 0.3: 0.15, 0.4: 0.22, 0.5: 0.30 };
     var gmv = document.getElementById('gmvRange');
     var promo = document.getElementById('promoRange');
     var pick = document.getElementById('tierPick');
@@ -422,6 +423,9 @@
         });
         btn.classList.add('on');
         tier = Number(btn.getAttribute('data-tier'));
+        /* 换档时同步调整建议推广费：30% → 15%、40% → 22%、50% → 30% */
+        var g = Number(gmv.value);
+        promo.value = Math.round(g * promoRatio[tier] / 1000) * 1000;
         calc();
       });
     });

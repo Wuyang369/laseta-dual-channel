@@ -739,22 +739,21 @@
     <div class="stat"><div class="v">30<small>条+</small></div><div class="l">日发布能力 · 双平台合计，单条制作 5 分钟</div></div>
     <div class="stat"><div class="v">1177<small>条</small></div><div class="l">单赛道单次采集 · 周报零人工生成</div></div>
   </div>
-  <div class="demo-row" style="margin-top:26px">
-    <div class="demo">
-      <div class="head"><h4>DEMO 1 · 自动化上架：从 SPU 到千牛填表</h4></div>
-      <video controls preload="none" poster="assets/poster-listing.png" playsinline>
-        <source src="assets/demo-listing.mp4" type="video/mp4">当前浏览器不支持视频播放。
-      </video>
-    </div>
+  <div class="demo-row" style="margin-top:28px">
     <div>
-      <div class="cmd" style="margin-bottom:14px;display:inline-block">python3 -m src.cli --route taobao --spu YS-NY-6018</div>
+      <div class="cmd" style="margin-bottom:16px;display:inline-block">python3 -m src.cli --route taobao --spu YS-NY-6018</div>
       <ul class="fact-list">
         <li>实测款号 <b>YS-NY-6018</b>，淘宝千牛自动上架演练</li>
         <li>类目匹配 → 标题属性 → 规格设置</li>
         <li>校验不通过即 <b>安全中止</b></li>
         <li>全程 <b>零写入</b>，不产生脏数据</li>
       </ul>
-      <p style="font-size:14px;color:var(--text-3);margin-top:14px">四步流水线：录入 → 映射 → 校验（货号 + 标题双查重）→ 发布（结果回写台账可审计）。验证码与风控自动转人工，5 分钟内介入。</p>
+      <p class="media-cap" style="font-size:14px;margin-top:16px">四步流水线：录入 → 映射 → 校验（货号 + 标题双查重）→ 发布（结果回写台账可审计）。验证码与风控自动转人工，5 分钟内介入。</p>
+    </div>
+    <div class="demo">
+      <div class="head"><h4>DEMO 1 · 自动化上架</h4><span class="cmd">约 40 秒</span></div>
+      <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
+      <p class="media-cap">从 SPU 到千牛填表，全程录屏实录</p>
     </div>
   </div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
@@ -765,22 +764,21 @@
   <div class="chmark"><span class="chnum">07</span><span class="chname">AI 提效平台</span></div>
   <p class="kicker">DEMO 2</p>
   <h2 class="h2">自动化内容发布：素材到双平台分发</h2>
-  <div class="demo-row" style="margin-top:24px">
-    <div class="demo">
-      <div class="head"><h4>淘宝内容发布 · 半自动填表</h4></div>
-      <video controls preload="none" poster="assets/poster-publish.png" playsinline>
-        <source src="assets/demo-publish.mp4" type="video/mp4">当前浏览器不支持视频播放。
-      </video>
-    </div>
+  <div class="demo-row" style="margin-top:28px">
     <div>
-      <div class="cmd" style="margin-bottom:14px;display:inline-block">publish_taobao.py --sku 源来如此-279438 --manual-publish</div>
+      <div class="cmd" style="margin-bottom:16px;display:inline-block">publish_taobao.py --sku 源来如此-279438 --manual-publish</div>
       <ul class="fact-list">
         <li>自动：选视频 → 上传 → <b>短标题按 30 字符上限自动裁剪</b></li>
         <li>自动：正文填充 → 创作者声明勾选</li>
         <li>停在 <b>「发布内容」按钮前</b>，等待人工确认</li>
         <li>禁发清单 + 台账去重 <b>双重拦截</b></li>
       </ul>
-      <p style="font-size:14px;color:var(--text-3);margin-top:14px">五步链路：素材入库打标 → 本地批量渲染（差异化取景去重）→ 合规校验 → 双端发布 → 数据回流。平台查重率 &lt;5%，素材复用率 60%+。</p>
+      <p class="media-cap" style="font-size:14px;margin-top:16px">五步链路：素材入库打标 → 本地批量渲染（差异化取景去重）→ 合规校验 → 双端发布 → 数据回流。平台查重率 &lt;5%，素材复用率 60%+。</p>
+    </div>
+    <div class="demo">
+      <div class="head"><h4>DEMO 2 · 内容发布</h4><span class="cmd">约 60 秒</span></div>
+      <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
+      <p class="media-cap">淘宝内容发布 · 半自动填表实录</p>
     </div>
   </div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
@@ -791,22 +789,21 @@
   <div class="chmark"><span class="chnum">07</span><span class="chname">AI 提效平台</span></div>
   <p class="kicker">DEMO 3</p>
   <h2 class="h2">自动化趋势抓取：千瓜数据情报</h2>
-  <div class="demo-row" style="margin-top:24px">
-    <div class="demo">
-      <div class="head"><h4>千瓜数据链路 · 只读探测</h4></div>
-      <video controls preload="none" poster="assets/poster-trend.png" playsinline>
-        <source src="assets/demo-trend.mp4" type="video/mp4">当前浏览器不支持视频播放。
-      </video>
-    </div>
+  <div class="demo-row" style="margin-top:28px">
     <div>
-      <div class="cmd" style="margin-bottom:14px;display:inline-block">python3 qiangua_export.py --probe --hold 25</div>
+      <div class="cmd" style="margin-bottom:16px;display:inline-block">python3 qiangua_export.py --probe --hold 25</div>
       <ul class="fact-list">
         <li>打开千瓜数据平台 → 识别页面可采集元素</li>
         <li>输出抓取路径，<b>只读不导出</b>，不消耗导出额度</li>
         <li>串行控频防封 · 单赛道 1177 条 / 次</li>
         <li>周报自动生成并在线发布</li>
       </ul>
-      <p style="font-size:14px;color:var(--text-3);margin-top:14px">监控矩阵：爆文（低粉高赞 1000+）、热词（品类热搜 + 溢价率）、竞品、话题、达人、品类大盘。羊毛连裤袜 +2479%、灰色 +29.1% 这类新词，可提前 2–4 周发现并卡位。</p>
+      <p class="media-cap" style="font-size:14px;margin-top:16px">监控矩阵：爆文（低粉高赞 1000+）、热词（品类热搜 + 溢价率）、竞品、话题、达人、品类大盘。羊毛连裤袜 +2479%、灰色 +29.1% 这类新词，可提前 2–4 周发现并卡位。</p>
+    </div>
+    <div class="demo">
+      <div class="head"><h4>DEMO 3 · 趋势抓取</h4><span class="cmd">约 47 秒</span></div>
+      <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
+      <p class="media-cap">千瓜数据链路 · 只读探测实录</p>
     </div>
   </div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
@@ -884,20 +881,20 @@
 <!-- 37 外包与原则 -->
 <section class="slide" data-deck-label="分工原则">
   <div class="chmark"><span class="chnum">08</span><span class="chname">双渠道协同与组织</span></div>
-  <p class="kicker">OUTSOURCING</p>
-  <h2 class="h2">3 人不覆盖的环节，交给品牌方与外包</h2>
+  <p class="kicker">RESPONSIBILITY</p>
+  <h2 class="h2">3 人不覆盖的环节：先自我消化，再按增量外包</h2>
   <table class="dtable">
-    <tr><th style="width:24%">环节</th><th>承接方式</th></tr>
-    <tr><td><b>客服 / 售后</b></td><td>品牌方承接，代运营提供 FAQ 话术库与培训</td></tr>
-    <tr><td><b>数据分析</b></td><td>项目负责人兼任 + 自动化报表</td></tr>
-    <tr><td><b>商品 / 供应链</b></td><td>品牌方主导 + 运营对接</td></tr>
-    <tr><td><b>专业摄影 / 模特</b></td><td>品牌方外包，代运营出拍摄方案</td></tr>
-    <tr><td><b>达人合作</b></td><td>代运营筛选 + 品牌方签约</td></tr>
+    <tr><th style="width:20%">环节</th><th>前期承接方式（3 人团队内消化）</th><th style="width:27%">规模起来之后</th></tr>
+    <tr><td><b>客服 / 售后</b></td><td>项目负责人兼客服主管，FAQ 话术库 + 平台自动回复，先自己接</td><td class="em">日均咨询超 100 单，再外包第三方客服</td></tr>
+    <tr><td><b>数据分析</b></td><td>项目负责人兼任 + 自动化周报，不单独设岗</td><td>维持现状，随渠道扩张再补分析人力</td></tr>
+    <tr><td><b>达人合作</b></td><td>代运营自主筛选与执行，置换 / 纯佣为主，品牌方只授权与寄样</td><td>预算放大后再引入 MCN 代投</td></tr>
+    <tr><td><b>商品 / 供应链</b></td><td>品牌方主导备货与补货，运营提供销量预测</td><td>品牌方持续主导，代运营只做对接</td></tr>
+    <tr><td><b>专业摄影 / 模特</b></td><td>品牌方提供样品与预算，代运营出拍摄方案并执行</td><td>季度集中拍摄，摊薄单条素材成本</td></tr>
   </table>
   <div class="boxes c3" style="margin-top:24px">
-    <div class="box accent"><span class="tag">01</span><h4>只做高杠杆动作</h4><p>投放策略、爆品打造、大促方案、详情页转化优化——直接影响 GMV 的核心动作由 3 人团队亲自把控。</p></div>
-    <div class="box accent"><span class="tag">02</span><h4>外包低杠杆动作</h4><p>客服、发货、摄影、达人执行等标准化环节交给品牌方或外包，代运营出标准、做培训、控质量。</p></div>
-    <div class="box accent"><span class="tag">03</span><h4>节奏主动放慢</h4><p>双渠道不同时全力推进——Phase 1 主攻京东 SOP，唯品会首档验证后再上量，避免精力分散。</p></div>
+    <div class="box accent"><span class="tag">01</span><h4>三件事先自我消化</h4><p>客服（前期）、数据分析、达人合作由 3 人团队直接承接，不再转给品牌方或外部团队。</p></div>
+    <div class="box accent"><span class="tag">02</span><h4>只有客服按增量外包</h4><p>订单量起来、咨询峰值压不住时，才把客服转给第三方；其余环节不设外包。</p></div>
+    <div class="box accent"><span class="tag">03</span><h4>品牌只做不可替代的事</h4><p>供应链、样品与授权、预算审批留在品牌方，已并入「品牌方支持清单」统一管理。</p></div>
   </div>
   <div class="callout"><b>工具与系统</b>：平台自带工具 + 飞书 / 企微文档协作，不采购付费第三方工具，把预算留给投放与内容。</div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
@@ -975,13 +972,12 @@
   <div class="chmark"><span class="chnum">09</span><span class="chname">实施计划与保障</span></div>
   <p class="kicker">FEE MODEL</p>
   <h2 class="h2">服务费模式：三档分成</h2>
-  <p class="lede">按月度剔除退货退款销售额 × 30% / 40% / 50% 分档结算，服务费内含客户垫付推广费；推广费超出服务费时，按 GMV × 3%–5% 补最低门槛。</p>
+  <p class="lede">按月度剔除退货退款销售额 × 30% / 40% / 50% 分档结算，服务费内含客户垫付推广费；<b>服务费越高，可承载的推广费越高</b>，推广费超出服务费时按 GMV × 3%–5% 补最低门槛。</p>
   <div class="boxes c3" style="margin-top:24px">
-    <div class="box"><div class="big">30<small>%</small></div><h4>轻量托管 · 起量期</h4><ul><li>服务费 = 月剔除退货销售额 × 30%</li><li>客户垫付推广费，从服务费中抵扣</li><li>适合：冷启动期、投放占比低</li><li>结算：月付（次月结上月）</li><li>品牌方风险：低，费用与实销挂钩</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
-    <div class="box accent"><span class="tag">RECOMMENDED</span><div class="big">40<small>%</small></div><h4>标准托管 · 推荐</h4><ul><li>服务费 = 月剔除退货销售额 × 40%</li><li>客户垫付推广费，从服务费中抵扣</li><li>适合：成长期、投放稳定放量</li><li>结算：月付（次月结上月）</li><li>品牌方风险：中低，推广费内含抵扣</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
-    <div class="box"><div class="big">50<small>%</small></div><h4>深度全托管 · 放量期</h4><ul><li>服务费 = 月剔除退货销售额 × 50%</li><li>客户垫付推广费，从服务费中抵扣</li><li>适合：放量期、付费占比高</li><li>结算：月付（次月结上月）</li><li>品牌方风险：中，高分成换全托管</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
+    <div class="box"><div class="big">30<small>%</small></div><h4>轻量托管 · 起量期</h4><ul><li>服务费 = 月剔除退货销售额 × 30%</li><li>推广费约 <b>15%</b> 销售额（GMV 10 万 → 1.5 万）</li><li>适合：冷启动期、投放占比低</li><li>结算：月付（次月结上月）</li><li>品牌方风险：低，费用与实销挂钩</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
+    <div class="box accent"><span class="tag">RECOMMENDED</span><div class="big">40<small>%</small></div><h4>标准托管 · 推荐</h4><ul><li>服务费 = 月剔除退货销售额 × 40%</li><li>推广费约 <b>22%</b> 销售额（GMV 10 万 → 2.2 万）</li><li>适合：成长期、投放稳定放量</li><li>结算：月付（次月结上月）</li><li>品牌方风险：中低，推广费内含抵扣</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
+    <div class="box"><div class="big">50<small>%</small></div><h4>深度全托管 · 放量期</h4><ul><li>服务费 = 月剔除退货销售额 × 50%</li><li>推广费约 <b>30%</b> 销售额（GMV 10 万 → 3.0 万）</li><li>适合：放量期、付费占比高</li><li>结算：月付（次月结上月）</li><li>品牌方风险：中，高分成换全托管</li><li>兜底：推广费超服务费补 GMV × 3%–5%</li></ul></div>
   </div>
-  <div class="callout"><b>纯利润分成模式不对外开放</b>——隐性成本与人员成本无法替客户把控，最终会反噬执行质量。</div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
 </section>
 
@@ -1004,21 +1000,21 @@
           <input type="range" id="gmvRange" min="30000" max="300000" step="10000" value="100000">
         </div>
         <div class="calc-field">
-          <label>客户垫付推广费</label>
-          <div class="val"><span id="promoVal">20,000</span><small>元</small></div>
-          <input type="range" id="promoRange" min="0" max="120000" step="5000" value="20000">
+          <label>客户垫付推广费（按档位建议值）</label>
+          <div class="val"><span id="promoVal">15,000</span><small>元</small></div>
+          <input type="range" id="promoRange" min="0" max="120000" step="1000" value="15000">
         </div>
       </div>
       <div class="calc-out">
         <div><div class="k">服务费（含推广抵扣）</div><div class="v" id="outFee">30,000</div></div>
-        <div><div class="k">应实付服务费</div><div class="v" id="outPay">10,000</div></div>
-        <div><div class="k">实际服务费率</div><div class="v" id="outRate">10.0%</div></div>
+        <div><div class="k">应实付服务费</div><div class="v" id="outPay">15,000</div></div>
+        <div><div class="k">实际服务费率</div><div class="v" id="outRate">15.0%</div></div>
       </div>
-      <p class="calc-hint" id="calcHint">服务费 30,000 元 − 客户垫付推广费 20,000 元 = 实付 10,000 元。付费占比 20.0%</p>
+      <p class="calc-hint" id="calcHint">服务费 30,000 元 − 客户垫付推广费 15,000 元 = 实付 15,000 元。付费占比 15.0%</p>
       <p class="calc-hint" style="margin-top:6px">说明：推广费由客户直接支付给平台，服务费中抵扣；推广费达到或超过服务费时，按兜底门槛 GMV × 5% 收取（合同可在 3%–5% 区间按档位约定）。</p>
     </div>
     <div class="chart-box" style="margin-top:0">
-      <div class="cap">30% 档下实付服务费随垫付推广费的变化（月 GMV 10 万）</div>
+      <div class="cap">以 30% 档、月 GMV 10 万为例：实付服务费随垫付推广费的变化</div>
       <p class="note">推广费达到 3 万元后触发兜底，实付固定为 GMV × 5% = 5000 元——这就是「不做白干」的底线。</p>
       <div id="chart-fee" class="chart"></div>
     </div>
@@ -1034,8 +1030,8 @@
   <p class="lede" style="font-size:20px">按优先级分四级：P0 启动必备、P1 30 天内必备、P2 增长期需要、P3 长期建设。</p>
   <div class="boxes c4" style="margin-top:24px">
     <div class="box accent"><div class="big">P0</div><h4>启动必备 · 0–7 天</h4><ul><li>品牌资质：营业执照 · 商标注册证 · 授权书</li><li>产品质检报告（CNAS / CMA）</li><li>平台账号与后台权限</li><li>首批选品清单 · 成本价 · 建议零售价</li><li>产品素材包（详情页素材 · 卖点文案）</li><li>费用预算确认（保证金 · 备货 · 广告 · 服务费）</li></ul></div>
-    <div class="box"><div class="big">P1</div><h4>首月必备 · 30 天内</h4><ul><li>天猫后台数据授权（生意参谋导出）</li><li>供应链对接（工厂 · 生产周期 · 补货 SLA）</li><li>三渠道价格矩阵 · 最低价红线</li><li>独享款 / 组盒装开发排期</li><li>客服对接与 FAQ</li><li>抖音内容素材授权（源文件 · 使用权）</li></ul></div>
-    <div class="box"><div class="big">P2</div><h4>增长期 · 30–90 天</h4><ul><li>广告预算：月 GMV 的 10–15%</li><li>专业拍摄支持（模特 · 场地 · 摄影）</li><li>达人合作预算（KOC + 腰部）</li><li>FBP 入仓决策与仓储费用确认</li><li>新品开发协同（打样周期）</li><li>直播资源（场地 / 设备 · 主播）</li></ul></div>
+    <div class="box"><div class="big">P1</div><h4>首月必备 · 30 天内</h4><ul><li>天猫后台数据授权（生意参谋导出）</li><li>供应链对接（工厂 · 生产周期 · 补货 SLA）</li><li>三渠道价格矩阵 · 最低价红线</li><li>独享款 / 组盒装开发排期</li><li>客服授权：退货地址 · 赔付口径 · FAQ</li><li>抖音内容素材授权（源文件 · 使用权）</li></ul></div>
+    <div class="box"><div class="big">P2</div><h4>增长期 · 30–90 天</h4><ul><li>广告预算：月 GMV 的 10–15%</li><li>拍摄支持：样品 · 场地 · 预算（代运营执行）</li><li>达人合作预算 + 寄样授权（KOC / 腰部）</li><li>FBP 入仓决策与仓储费用确认</li><li>新品开发协同（打样周期）</li><li>直播资源（场地 / 设备 · 主播）</li></ul></div>
     <div class="box"><div class="big">P3</div><h4>长期建设 · 90–180 天+</h4><ul><li>品牌战略对齐（年度规划 · 调性）</li><li>ERP 系统对接（API · 库存同步）</li><li>IP 联名 / 跨界资源</li><li>线下资源联动（专柜 / 门店 · O2O）</li><li>会员体系打通（品牌 × 平台）</li></ul></div>
   </div>
   <div class="s-footer"><span>laseta 兰妲 · 双渠道代运营方案</span><span class="slide-number"></span></div>
@@ -1151,7 +1147,7 @@
         o.inner.style.paddingBottom = '';
         o.inner.style.rowGap = '';
         var avail = o.body.clientHeight;
-        var h = o.inner.getBoundingClientRect().height;
+        var h = o.inner.offsetHeight;
         if (!avail || !h) return;
         if (h > avail) {
           o.inner.style.transform = 'scale(' + Math.max(0.7, avail / h) + ')';

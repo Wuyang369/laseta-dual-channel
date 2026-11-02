@@ -161,6 +161,11 @@ td.em{color:var(--accent);font-weight:600;white-space:nowrap}
 /* 视频 */
 .demo{background:var(--bg2);border-radius:var(--radius);padding:22px;margin:24px 0}
 .demo video{width:100%;border-radius:4px;border:1px solid var(--rule);background:#0F0E0D}
+.media-slot{aspect-ratio:16/9;max-width:680px;border:1.5px dashed rgba(168,69,47,.38);border-radius:6px;
+  background:linear-gradient(135deg,rgba(168,69,47,.06),rgba(44,74,90,.07));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted)}
+.media-slot b{font-size:16px;font-weight:600;color:#2C4A5A}
+.media-slot span{font-size:12px;letter-spacing:.08em}
 .demo .cap{display:flex;justify-content:space-between;gap:16px;margin-bottom:12px;flex-wrap:wrap}
 .demo .cap h5{font-size:15px;margin:0}
 .demo .cap .cmd{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--accent);background:var(--bg);padding:4px 10px;border-radius:4px;border:1px solid var(--rule)}
@@ -792,10 +797,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <h5>淘宝千牛 · 自动上架演练（零写入）</h5>
           <div class="cmd">python3 -m src.cli --route taobao --spu YS-NY-6018</div>
         </div>
-        <video controls preload="none" poster="assets/poster-listing.png" playsinline>
-          <source src="assets/demo-listing.mp4" type="video/mp4">
-          当前浏览器不支持视频播放。
-        </video>
+        <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
         <div class="facts">
           <span>实测款号 <b>YS-NY-6018</b></span>
           <span>类目匹配 → 标题属性 → 规格设置</span>
@@ -811,10 +813,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <h5>淘宝内容发布 · 半自动填表（人工确认后才上线）</h5>
           <div class="cmd">publish_taobao.py --sku 源来如此-279438 --manual-publish</div>
         </div>
-        <video controls preload="none" poster="assets/poster-publish.png" playsinline>
-          <source src="assets/demo-publish.mp4" type="video/mp4">
-          当前浏览器不支持视频播放。
-        </video>
+        <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
         <div class="facts">
           <span>自动：选视频 → 上传 → <b>短标题按 30 字符上限自动裁剪</b></span>
           <span>自动：正文填充 → 创作者声明勾选</span>
@@ -830,10 +829,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <h5>千瓜数据链路 · 只读探测（不消耗导出额度）</h5>
           <div class="cmd">python3 qiangua_export.py --probe --hold 25</div>
         </div>
-        <video controls preload="none" poster="assets/poster-trend.png" playsinline>
-          <source src="assets/demo-trend.mp4" type="video/mp4">
-          当前浏览器不支持视频播放。
-        </video>
+        <div class="media-slot"><b>演示视频占位</b><span>后期剪辑后嵌入 · 16:9</span></div>
         <div class="facts">
           <span>打开千瓜数据平台 → 识别页面可采集元素</span>
           <span>输出抓取路径，<b>只读不导出</b></span>
@@ -932,22 +928,22 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
         </table>
       </div>
 
-      <h4>外包 / 品牌方协同事项（3 人不覆盖的环节）</h4>
+      <h4>3 人不覆盖的环节：先自我消化，再按增量外包</h4>
       <div class="table-wrap">
         <table>
-          <tr><th>环节</th><th>承接方式</th></tr>
-          <tr><td>客服 / 售后</td><td>品牌方承接，代运营提供 FAQ 话术库与培训</td></tr>
-          <tr><td>数据分析</td><td>项目负责人兼任 + 自动化报表</td></tr>
-          <tr><td>商品 / 供应链</td><td>品牌方主导 + 运营对接</td></tr>
-          <tr><td>专业摄影 / 模特</td><td>品牌方外包，代运营出拍摄方案</td></tr>
-          <tr><td>达人合作</td><td>代运营筛选 + 品牌方签约</td></tr>
+          <tr><th style="width:20%">环节</th><th>前期承接方式（3 人团队内消化）</th><th style="width:30%">规模起来之后</th></tr>
+          <tr><td>客服 / 售后</td><td>项目负责人兼客服主管，FAQ 话术库 + 平台自动回复，先自己接</td><td class="em">日均咨询超 100 单，再外包第三方客服</td></tr>
+          <tr><td>数据分析</td><td>项目负责人兼任 + 自动化周报，不单独设岗</td><td>维持现状，随渠道扩张再补分析人力</td></tr>
+          <tr><td>达人合作</td><td>代运营自主筛选与执行，置换 / 纯佣为主，品牌方只授权与寄样</td><td>预算放大后再引入 MCN 代投</td></tr>
+          <tr><td>商品 / 供应链</td><td>品牌方主导备货与补货，运营提供销量预测</td><td>品牌方持续主导，代运营只做对接</td></tr>
+          <tr><td>专业摄影 / 模特</td><td>品牌方提供样品与预算，代运营出拍摄方案并执行</td><td>季度集中拍摄，摊薄单条素材成本</td></tr>
         </table>
       </div>
 
       <div class="grid g3">
-        <div class="card"><div class="big">01</div><h5>只做高杠杆动作</h5><p>投放策略、爆品打造、大促方案、详情页转化优化——直接影响 GMV 的核心动作由 3 人团队亲自把控。</p></div>
-        <div class="card"><div class="big">02</div><h5>外包低杠杆动作</h5><p>客服、发货、摄影、达人执行等标准化环节交给品牌方或外包团队，代运营出标准、做培训、控质量。</p></div>
-        <div class="card"><div class="big">03</div><h5>节奏主动放慢</h5><p>双渠道不同时全力推进——Phase 1 主攻京东 SOP（轻模式），唯品会首档验证后再上量，避免精力分散。</p></div>
+        <div class="card"><div class="big">01</div><h5>三件事先自我消化</h5><p>客服（前期）、数据分析、达人合作由 3 人团队直接承接，不再转给品牌方或外部团队。</p></div>
+        <div class="card"><div class="big">02</div><h5>只有客服按增量外包</h5><p>订单量起来、咨询峰值压不住时，才把客服转给第三方；其余环节不设外包。</p></div>
+        <div class="card"><div class="big">03</div><h5>品牌只做不可替代的事</h5><p>供应链、样品与授权、预算审批留在品牌方，已并入「品牌方支持清单」统一管理。</p></div>
       </div>
       <div class="callout">
         <b>工具与系统</b>：3 人轻量版配置——平台自带工具 + 飞书 / 企微文档协作，不采购付费第三方工具，把预算留给投放与内容。
@@ -1024,14 +1020,14 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
       </div>
 
       <h3><span class="tag">FEE MODEL</span>服务费模式：三档分成</h3>
-      <p>按月度剔除退货退款销售额 × 30% / 40% / 50% 分档结算，服务费内含客户垫付推广费；推广费超出服务费时，按 GMV × 3%–5% 补最低门槛。付费占比设上限，超上限后门槛比例下调。</p>
+      <p>按月度剔除退货退款销售额 × 30% / 40% / 50% 分档结算，服务费内含客户垫付推广费；<b>服务费越高，可承载的推广费越高</b>，推广费超出服务费时按 GMV × 3%–5% 补最低门槛。</p>
       <div class="grid g3">
         <div class="card">
           <div class="big">30<small>%</small></div>
           <h5>轻量托管 · 起量期</h5>
           <ul>
             <li>服务费 = 月剔除退货销售额 × 30%</li>
-            <li>客户垫付推广费，从服务费中抵扣</li>
+            <li>推广费约 <b>15%</b> 销售额（GMV 10 万 → 1.5 万）</li>
             <li>适合：冷启动期、投放占比低</li>
             <li>结算：月付（次月结上月）</li>
             <li>品牌方风险：低，费用与实销挂钩</li>
@@ -1043,7 +1039,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <h5>标准托管 · 推荐</h5>
           <ul>
             <li>服务费 = 月剔除退货销售额 × 40%</li>
-            <li>客户垫付推广费，从服务费中抵扣</li>
+            <li>推广费约 <b>22%</b> 销售额（GMV 10 万 → 2.2 万）</li>
             <li>适合：成长期、投放稳定放量</li>
             <li>结算：月付（次月结上月）</li>
             <li>品牌方风险：中低，推广费内含抵扣</li>
@@ -1055,7 +1051,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <h5>深度全托管 · 放量期</h5>
           <ul>
             <li>服务费 = 月剔除退货销售额 × 50%</li>
-            <li>客户垫付推广费，从服务费中抵扣</li>
+            <li>推广费约 <b>30%</b> 销售额（GMV 10 万 → 3.0 万）</li>
             <li>适合：放量期、付费占比高</li>
             <li>结算：月付（次月结上月）</li>
             <li>品牌方风险：中，高分成换全托管</li>
@@ -1078,29 +1074,28 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
             <input type="range" id="gmvRange" min="30000" max="300000" step="10000" value="100000">
           </div>
           <div class="calc-field">
-            <label>客户垫付推广费</label>
-            <div class="val"><span id="promoVal">20,000</span><small>元</small></div>
-            <input type="range" id="promoRange" min="0" max="120000" step="5000" value="20000">
+            <label>客户垫付推广费（按档位建议值）</label>
+            <div class="val"><span id="promoVal">15,000</span><small>元</small></div>
+            <input type="range" id="promoRange" min="0" max="120000" step="1000" value="15000">
           </div>
         </div>
         <div class="calc-out">
           <div><div class="k">服务费（含推广抵扣）</div><div class="v" id="outFee">30,000</div></div>
-          <div><div class="k">应实付服务费</div><div class="v" id="outPay">10,000</div></div>
-          <div><div class="k">实际服务费率</div><div class="v" id="outRate">10.0%</div></div>
+          <div><div class="k">应实付服务费</div><div class="v" id="outPay">15,000</div></div>
+          <div><div class="k">实际服务费率</div><div class="v" id="outRate">15.0%</div></div>
         </div>
-        <p class="calc-hint" id="calcHint">服务费 30,000 元 − 客户垫付推广费 20,000 元 = 实付 10,000 元。付费占比 20.0%</p>
+        <p class="calc-hint" id="calcHint">服务费 30,000 元 − 客户垫付推广费 15,000 元 = 实付 15,000 元。付费占比 15.0%</p>
         <p class="calc-hint" style="margin-top:6px">说明：推广费由客户直接支付给平台，服务费中抵扣；推广费达到或超过服务费时，按兜底门槛 GMV × 5% 收取（合同可在 3%–5% 区间按档位约定）。</p>
       </div>
 
       <figure class="chart-figure">
-        <figcaption>30% 档下实付服务费随垫付推广费的变化（月 GMV 10 万）</figcaption>
-        <p class="note">服务费 3 万元；推广费 2 万元时实付 1 万元；推广费达到 3 万元后触发兜底，实付固定为 GMV × 5% = 5000 元。这就是「不做白干」的底线。</p>
+        <figcaption>以 30% 档、月 GMV 10 万为例：实付服务费随垫付推广费的变化</figcaption>
+        <p class="note">服务费 3 万元；推广费 1.5 万元时实付 1.5 万元；推广费达到 3 万元后触发兜底，实付固定为 GMV × 5% = 5000 元。这就是「不做白干」的底线。</p>
         <div id="chart-fee" class="chart"></div>
       </figure>
 
       <div class="callout">
-        <b>推荐 40% 档（标准托管）</b>：服务费与真实销售挂钩、推广费内含抵扣，品牌方风险可控；我方保留利润操盘空间与推广灵活度。<br>
-        <b>纯利润分成模式不对外开放</b>——隐性成本与人员成本无法替客户把控，最终会反噬执行质量。
+        <b>推荐 40% 档（标准托管）</b>：服务费与真实销售挂钩、推广费内含抵扣，品牌方风险可控；我方保留利润操盘空间与推广灵活度。
       </div>
 
       <h3><span class="tag">RESOURCES</span>品牌方需提供的支持清单</h3>
@@ -1124,7 +1119,7 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
             <li>供应链对接（工厂 · 生产周期 · 补货 SLA）</li>
             <li>三渠道价格矩阵 · 最低价红线</li>
             <li>独享款 / 组盒装开发排期</li>
-            <li>客服对接与 FAQ（产品知识 · 退换货政策）</li>
+            <li>客服授权：退货地址 · 赔付口径 · FAQ</li>
             <li>抖音内容素材授权（视频源文件 · 使用权）</li>
           </ul>
         </div>
@@ -1132,8 +1127,8 @@ footer .sources .src-url{display:block;margin-top:.15rem;font-size:.82rem;color:
           <div class="big">P2</div><h5>增长期需要 · 30–90 天</h5>
           <ul>
             <li>广告预算：月 GMV 的 10–15%（京准通 + 唯直达）</li>
-            <li>专业拍摄支持（模特 · 场地 · 摄影）</li>
-            <li>达人合作预算（KOC 铺量 + 腰部种草）</li>
+            <li>拍摄支持：样品 · 场地 · 预算（代运营执行）</li>
+            <li>达人合作预算 + 寄样授权（KOC / 腰部）</li>
             <li>FBP 入仓决策与仓储费用确认</li>
             <li>新品开发协同（渠道需求 · 打样周期）</li>
             <li>直播资源（场地 / 设备 · 主播 / 数字人）</li>
